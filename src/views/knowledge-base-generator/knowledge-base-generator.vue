@@ -1,6 +1,6 @@
 <template>
     <div>
-        <single-file @data-sent="handleDataFromChild" />
+        <FileProgress @data-sent="handleDataFromChild" />
         <br />
         <div>
             <h2>Result Table</h2>
@@ -11,14 +11,14 @@
 </template>
 
 <script>
-    import SingleFile from '../../components/SingleFile.vue'
+    import FileProgress from '../../components/FileProgress.vue';
     import Table from '../../components/Table.vue'
 
     export default {
         name: 'KnowledgeBaseGenerator',
         components: {
-            SingleFile,
-            Table
+            Table,
+            FileProgress
         },
         data() {
             return {
